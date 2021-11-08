@@ -1,6 +1,6 @@
 ﻿Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        enlace()
     End Sub
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
@@ -44,11 +44,17 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_inicio.Click
-
+        Dim Inicio As New NuevoProyecto
+        label_titulo.Text = "Nuevo Proyecto"
+        panelGeneral.Controls.Clear()
+        panelGeneral.Controls.Add(Inicio)
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-
+        Dim calculoBomba As New CalculoBomba
+        label_titulo.Text = "Calculo de bomba"
+        panelGeneral.Controls.Clear()
+        panelGeneral.Controls.Add(calculoBomba)
     End Sub
 
     Private Sub btn_nuevaProyeccion_Click(sender As Object, e As EventArgs) Handles btn_nuevaProyeccion.Click
@@ -60,5 +66,20 @@
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles label_titulo.Click
 
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim resultados As New Resultados
+        label_titulo.Text = "Resultados"
+        panelGeneral.Controls.Clear()
+        panelGeneral.Controls.Add(resultados)
     End Sub
 End Class

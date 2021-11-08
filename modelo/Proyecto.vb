@@ -1,4 +1,5 @@
 ﻿Public Class Proyecto
+    Private idProyecto As Integer
     Private pais As String
     Private departamento As String
     Private municipio As String
@@ -14,7 +15,8 @@
 
     End Sub
 
-    Public Sub New(pais As String, departamento As String, municipio As String, comunidad As String, poblacionInicial As Decimal, tasaCrecimiento As Decimal, dotacion As Decimal, tipoFuente As String, elevacionPuente As Decimal, elevacionTanque As Decimal)
+    Public Sub New(idProyecto As Integer, pais As String, departamento As String, municipio As String, comunidad As String, poblacionInicial As Decimal, tasaCrecimiento As Decimal, dotacion As Decimal, tipoFuente As String, elevacionPuente As Decimal, elevacionTanque As Decimal)
+        Me.idProyecto = idProyecto
         Me.pais = pais
         Me.departamento = departamento
         Me.municipio = municipio
@@ -114,6 +116,15 @@
         End Get
         Set(value As Decimal)
             elevacionTanque = value
+        End Set
+    End Property
+
+    Public Property IdProyecto1 As Integer
+        Get
+            Return idProyecto
+        End Get
+        Set(value As Integer)
+            idProyecto = value
         End Set
     End Property
 End Class

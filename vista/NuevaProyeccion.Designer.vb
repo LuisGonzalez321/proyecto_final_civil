@@ -23,28 +23,18 @@ Partial Class NuevaProyeccion
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.text_pais = New System.Windows.Forms.TextBox()
-        Me.text_departamento = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.text_municipio = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.text_tasaCrecimiento = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.text_poblacionInicial = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.text_comunidad = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.text_elevacionPuente = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.text_tipoFuente = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.text_dotacion = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.btn_nuevo = New System.Windows.Forms.Button()
-        Me.btn_guardar = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.btn_cancelar = New System.Windows.Forms.Button()
+        Me.btn_guardar = New System.Windows.Forms.Button()
+        Me.btn_nuevo = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
@@ -54,190 +44,84 @@ Partial Class NuevaProyeccion
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(44, 66)
+        Me.Label1.Location = New System.Drawing.Point(28, 44)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(34, 20)
+        Me.Label1.Size = New System.Drawing.Size(147, 20)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "País"
-        '
-        'text_pais
-        '
-        Me.text_pais.Location = New System.Drawing.Point(156, 63)
-        Me.text_pais.Name = "text_pais"
-        Me.text_pais.Size = New System.Drawing.Size(229, 27)
-        Me.text_pais.TabIndex = 1
-        '
-        'text_departamento
-        '
-        Me.text_departamento.Location = New System.Drawing.Point(156, 112)
-        Me.text_departamento.Name = "text_departamento"
-        Me.text_departamento.Size = New System.Drawing.Size(229, 27)
-        Me.text_departamento.TabIndex = 3
+        Me.Label1.Text = "Tasa de crecimiento: "
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(44, 115)
+        Me.Label2.Location = New System.Drawing.Point(28, 109)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 20)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Departamento"
-        '
-        'text_municipio
-        '
-        Me.text_municipio.Location = New System.Drawing.Point(156, 164)
-        Me.text_municipio.Name = "text_municipio"
-        Me.text_municipio.Size = New System.Drawing.Size(229, 27)
-        Me.text_municipio.TabIndex = 5
+        Me.Label2.Size = New System.Drawing.Size(77, 20)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Dotación: "
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(44, 167)
+        Me.Label3.Location = New System.Drawing.Point(235, 44)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(75, 20)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Municipio"
+        Me.Label3.Size = New System.Drawing.Size(125, 20)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Perdidas técnicas:"
         '
-        'text_tasaCrecimiento
+        'TextBox1
         '
-        Me.text_tasaCrecimiento.Location = New System.Drawing.Point(602, 115)
-        Me.text_tasaCrecimiento.Name = "text_tasaCrecimiento"
-        Me.text_tasaCrecimiento.Size = New System.Drawing.Size(193, 27)
-        Me.text_tasaCrecimiento.TabIndex = 11
+        Me.TextBox1.Location = New System.Drawing.Point(408, 41)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(125, 27)
+        Me.TextBox1.TabIndex = 3
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(408, 106)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(125, 27)
+        Me.TextBox2.TabIndex = 5
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(454, 118)
+        Me.Label4.Location = New System.Drawing.Point(235, 109)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(142, 20)
-        Me.Label4.TabIndex = 10
-        Me.Label4.Text = "Tasa de Crecimiento"
+        Me.Label4.Size = New System.Drawing.Size(167, 20)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Consumo Público o inst:"
         '
-        'text_poblacionInicial
+        'TextBox3
         '
-        Me.text_poblacionInicial.Location = New System.Drawing.Point(577, 63)
-        Me.text_poblacionInicial.Name = "text_poblacionInicial"
-        Me.text_poblacionInicial.Size = New System.Drawing.Size(218, 27)
-        Me.text_poblacionInicial.TabIndex = 9
+        Me.TextBox3.Location = New System.Drawing.Point(803, 41)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(125, 27)
+        Me.TextBox3.TabIndex = 7
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(454, 66)
+        Me.Label5.Location = New System.Drawing.Point(630, 44)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(117, 20)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Población Inicial"
+        Me.Label5.Size = New System.Drawing.Size(143, 20)
+        Me.Label5.TabIndex = 6
+        Me.Label5.Text = "Consumo comercial:"
         '
-        'text_comunidad
+        'TextBox4
         '
-        Me.text_comunidad.Location = New System.Drawing.Point(156, 212)
-        Me.text_comunidad.Name = "text_comunidad"
-        Me.text_comunidad.Size = New System.Drawing.Size(229, 27)
-        Me.text_comunidad.TabIndex = 7
+        Me.TextBox4.Location = New System.Drawing.Point(803, 106)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(125, 27)
+        Me.TextBox4.TabIndex = 9
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(44, 215)
+        Me.Label6.Location = New System.Drawing.Point(630, 109)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(86, 20)
-        Me.Label6.TabIndex = 6
-        Me.Label6.Text = "Comunidad"
-        '
-        'text_elevacionPuente
-        '
-        Me.text_elevacionPuente.Location = New System.Drawing.Point(969, 115)
-        Me.text_elevacionPuente.Name = "text_elevacionPuente"
-        Me.text_elevacionPuente.Size = New System.Drawing.Size(218, 27)
-        Me.text_elevacionPuente.TabIndex = 17
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(846, 118)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(121, 20)
-        Me.Label7.TabIndex = 16
-        Me.Label7.Text = "Elevación Puente"
-        '
-        'text_tipoFuente
-        '
-        Me.text_tipoFuente.Location = New System.Drawing.Point(969, 63)
-        Me.text_tipoFuente.Name = "text_tipoFuente"
-        Me.text_tipoFuente.Size = New System.Drawing.Size(218, 27)
-        Me.text_tipoFuente.TabIndex = 15
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(846, 66)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(106, 20)
-        Me.Label8.TabIndex = 14
-        Me.Label8.Text = "Tipo de fuente"
-        '
-        'text_dotacion
-        '
-        Me.text_dotacion.Location = New System.Drawing.Point(577, 161)
-        Me.text_dotacion.Name = "text_dotacion"
-        Me.text_dotacion.Size = New System.Drawing.Size(218, 27)
-        Me.text_dotacion.TabIndex = 13
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(454, 164)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(70, 20)
-        Me.Label9.TabIndex = 12
-        Me.Label9.Text = "Dotación"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(969, 167)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(218, 27)
-        Me.TextBox1.TabIndex = 19
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(846, 170)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(122, 20)
-        Me.Label10.TabIndex = 18
-        Me.Label10.Text = "Elevación tanque"
-        '
-        'btn_nuevo
-        '
-        Me.btn_nuevo.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.btn_nuevo.FlatAppearance.BorderSize = 0
-        Me.btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_nuevo.ForeColor = System.Drawing.Color.White
-        Me.btn_nuevo.Location = New System.Drawing.Point(490, 212)
-        Me.btn_nuevo.Name = "btn_nuevo"
-        Me.btn_nuevo.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
-        Me.btn_nuevo.Size = New System.Drawing.Size(202, 39)
-        Me.btn_nuevo.TabIndex = 20
-        Me.btn_nuevo.Text = "Nuevo"
-        Me.btn_nuevo.UseVisualStyleBackColor = False
-        '
-        'btn_guardar
-        '
-        Me.btn_guardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.btn_guardar.FlatAppearance.BorderSize = 0
-        Me.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_guardar.ForeColor = System.Drawing.Color.White
-        Me.btn_guardar.Location = New System.Drawing.Point(741, 212)
-        Me.btn_guardar.Name = "btn_guardar"
-        Me.btn_guardar.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
-        Me.btn_guardar.Size = New System.Drawing.Size(202, 39)
-        Me.btn_guardar.TabIndex = 21
-        Me.btn_guardar.Text = "Guardar"
-        Me.btn_guardar.UseVisualStyleBackColor = False
+        Me.Label6.Size = New System.Drawing.Size(130, 20)
+        Me.Label6.TabIndex = 8
+        Me.Label6.Text = "Consumo Insutrial:"
         '
         'btn_cancelar
         '
@@ -245,32 +129,60 @@ Partial Class NuevaProyeccion
         Me.btn_cancelar.FlatAppearance.BorderSize = 0
         Me.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_cancelar.ForeColor = System.Drawing.Color.White
-        Me.btn_cancelar.Location = New System.Drawing.Point(985, 212)
+        Me.btn_cancelar.Location = New System.Drawing.Point(455, 174)
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
         Me.btn_cancelar.Size = New System.Drawing.Size(202, 39)
-        Me.btn_cancelar.TabIndex = 22
+        Me.btn_cancelar.TabIndex = 36
         Me.btn_cancelar.Text = "Cancelar"
         Me.btn_cancelar.UseVisualStyleBackColor = False
+        '
+        'btn_guardar
+        '
+        Me.btn_guardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.btn_guardar.FlatAppearance.BorderSize = 0
+        Me.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_guardar.ForeColor = System.Drawing.Color.White
+        Me.btn_guardar.Location = New System.Drawing.Point(175, 174)
+        Me.btn_guardar.Name = "btn_guardar"
+        Me.btn_guardar.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
+        Me.btn_guardar.Size = New System.Drawing.Size(202, 39)
+        Me.btn_guardar.TabIndex = 35
+        Me.btn_guardar.Text = "Guardar"
+        Me.btn_guardar.UseVisualStyleBackColor = False
+        '
+        'btn_nuevo
+        '
+        Me.btn_nuevo.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.btn_nuevo.FlatAppearance.BorderSize = 0
+        Me.btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_nuevo.ForeColor = System.Drawing.Color.White
+        Me.btn_nuevo.Location = New System.Drawing.Point(705, 174)
+        Me.btn_nuevo.Name = "btn_nuevo"
+        Me.btn_nuevo.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
+        Me.btn_nuevo.Size = New System.Drawing.Size(202, 39)
+        Me.btn_nuevo.TabIndex = 34
+        Me.btn_nuevo.Text = "Calcular"
+        Me.btn_nuevo.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
-        Me.GroupBox1.Location = New System.Drawing.Point(14, 262)
+        Me.GroupBox1.Location = New System.Drawing.Point(28, 268)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1218, 265)
-        Me.GroupBox1.TabIndex = 23
+        Me.GroupBox1.Size = New System.Drawing.Size(1204, 179)
+        Me.GroupBox1.TabIndex = 37
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Lista de proyectos"
+        Me.GroupBox1.Text = "Proyección de Poblacion y consumo"
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(6, 26)
+        Me.DataGridView1.Location = New System.Drawing.Point(15, 26)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(1206, 233)
+        Me.DataGridView1.Size = New System.Drawing.Size(1183, 147)
         Me.DataGridView1.TabIndex = 0
         '
         'NuevaProyeccion
@@ -282,28 +194,18 @@ Partial Class NuevaProyeccion
         Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.btn_guardar)
         Me.Controls.Add(Me.btn_nuevo)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.text_elevacionPuente)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.text_tipoFuente)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.text_dotacion)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.text_tasaCrecimiento)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.text_poblacionInicial)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.text_comunidad)
+        Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.text_municipio)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.text_departamento)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.text_pais)
         Me.Controls.Add(Me.Label1)
         Me.Name = "NuevaProyeccion"
-        Me.Size = New System.Drawing.Size(1235, 1000)
+        Me.Size = New System.Drawing.Size(1235, 499)
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -312,28 +214,18 @@ Partial Class NuevaProyeccion
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents text_pais As TextBox
-    Friend WithEvents text_departamento As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents text_municipio As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents text_tasaCrecimiento As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents text_poblacionInicial As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents text_comunidad As TextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents text_elevacionPuente As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents text_tipoFuente As TextBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents text_dotacion As TextBox
-    Friend WithEvents Label9 As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label10 As Label
-    Friend WithEvents btn_nuevo As Button
-    Friend WithEvents btn_guardar As Button
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Label6 As Label
     Friend WithEvents btn_cancelar As Button
+    Friend WithEvents btn_guardar As Button
+    Friend WithEvents btn_nuevo As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents DataGridView1 As DataGridView
 End Class

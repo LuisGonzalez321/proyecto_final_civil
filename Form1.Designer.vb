@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -31,17 +31,17 @@ Partial Class Form1
         Me.btn_inicio = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.panelGeneral = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.label_titulo = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Splitter1 = New System.Windows.Forms.Splitter()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        Me.panelGeneral.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -124,10 +124,10 @@ Partial Class Form1
         Me.btn_inicio.ForeColor = System.Drawing.Color.White
         Me.btn_inicio.Location = New System.Drawing.Point(0, 274)
         Me.btn_inicio.Name = "btn_inicio"
-        Me.btn_inicio.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
+        Me.btn_inicio.Padding = New System.Windows.Forms.Padding(0, 0, 30, 0)
         Me.btn_inicio.Size = New System.Drawing.Size(272, 53)
         Me.btn_inicio.TabIndex = 8
-        Me.btn_inicio.Text = "Inicio"
+        Me.btn_inicio.Text = "Nuevo Proyecto"
         Me.btn_inicio.UseVisualStyleBackColor = False
         '
         'PictureBox1
@@ -143,6 +143,8 @@ Partial Class Form1
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.ListBox1)
         Me.Panel2.Controls.Add(Me.panelGeneral)
         Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.label_titulo)
@@ -155,24 +157,23 @@ Partial Class Form1
         Me.Panel2.Size = New System.Drawing.Size(1245, 710)
         Me.Panel2.TabIndex = 1
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 20
+        Me.ListBox1.Location = New System.Drawing.Point(652, 39)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(581, 104)
+        Me.ListBox1.TabIndex = 6
+        '
         'panelGeneral
         '
         Me.panelGeneral.AutoScroll = True
-        Me.panelGeneral.BackColor = System.Drawing.Color.DarkGray
-        Me.panelGeneral.Controls.Add(Me.Button1)
+        Me.panelGeneral.BackColor = System.Drawing.Color.White
         Me.panelGeneral.Location = New System.Drawing.Point(3, 173)
         Me.panelGeneral.Name = "panelGeneral"
         Me.panelGeneral.Size = New System.Drawing.Size(1239, 534)
         Me.panelGeneral.TabIndex = 5
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(284, 183)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'PictureBox2
         '
@@ -222,6 +223,17 @@ Partial Class Form1
         Me.Splitter1.TabIndex = 0
         Me.Splitter1.TabStop = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(150, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(652, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(184, 28)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Lista de proyectos"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -237,7 +249,6 @@ Partial Class Form1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.panelGeneral.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -257,5 +268,6 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents btn_nuevaProyeccion As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Label2 As Label
 End Class
