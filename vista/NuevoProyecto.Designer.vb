@@ -44,11 +44,11 @@ Partial Class NuevoProyecto
         Me.btn_guardar = New System.Windows.Forms.Button()
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.tabla_proyecto = New System.Windows.Forms.DataGridView()
         Me.combox_tipoFuente = New System.Windows.Forms.ComboBox()
         Me.text_tasaCrecimiento = New System.Windows.Forms.NumericUpDown()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.tabla_proyecto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.text_tasaCrecimiento, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -242,23 +242,23 @@ Partial Class NuevoProyecto
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.DataGridView2)
+        Me.GroupBox1.Controls.Add(Me.tabla_proyecto)
         Me.GroupBox1.Location = New System.Drawing.Point(14, 262)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1218, 312)
+        Me.GroupBox1.Size = New System.Drawing.Size(1195, 312)
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Lista de proyectos"
         '
-        'DataGridView2
+        'tabla_proyecto
         '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(6, 26)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.RowHeadersWidth = 51
-        Me.DataGridView2.RowTemplate.Height = 29
-        Me.DataGridView2.Size = New System.Drawing.Size(1206, 280)
-        Me.DataGridView2.TabIndex = 1
+        Me.tabla_proyecto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.tabla_proyecto.Location = New System.Drawing.Point(6, 26)
+        Me.tabla_proyecto.Name = "tabla_proyecto"
+        Me.tabla_proyecto.RowHeadersWidth = 51
+        Me.tabla_proyecto.RowTemplate.Height = 29
+        Me.tabla_proyecto.Size = New System.Drawing.Size(1180, 280)
+        Me.tabla_proyecto.TabIndex = 1
         '
         'combox_tipoFuente
         '
@@ -312,9 +312,9 @@ Partial Class NuevoProyecto
         Me.Controls.Add(Me.text_pais)
         Me.Controls.Add(Me.Label1)
         Me.Name = "NuevoProyecto"
-        Me.Size = New System.Drawing.Size(1235, 618)
+        Me.Size = New System.Drawing.Size(1220, 618)
         Me.GroupBox1.ResumeLayout(False)
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tabla_proyecto, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.text_tasaCrecimiento, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -343,7 +343,7 @@ Partial Class NuevoProyecto
     Friend WithEvents btn_guardar As Button
     Friend WithEvents btn_cancelar As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents tabla_proyecto As DataGridView
     Friend WithEvents combox_tipoFuente As ComboBox
     Friend WithEvents text_tasaCrecimiento As NumericUpDown
 End Class

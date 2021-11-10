@@ -9,7 +9,7 @@ Module Conexion
 
     Sub enlace()
         Try
-            conexion_.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\proyecto_civil.accdb"
+            conexion_.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\lgabr\OneDrive\Escritorio\CIVIL\proyecto_final_civil\proyecto_civil.accdb"
             conexion_.Open()
             estado = "conectado"
             MsgBox(estado)

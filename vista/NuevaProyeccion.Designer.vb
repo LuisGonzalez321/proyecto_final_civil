@@ -36,9 +36,9 @@ Partial Class NuevaProyeccion
         Me.btn_guardar = New System.Windows.Forms.Button()
         Me.btn_nuevo = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.tabla_proyectos = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.tabla_proyectos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -167,7 +167,7 @@ Partial Class NuevaProyeccion
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.DataGridView1)
+        Me.GroupBox1.Controls.Add(Me.tabla_proyectos)
         Me.GroupBox1.Location = New System.Drawing.Point(28, 268)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(1204, 179)
@@ -175,15 +175,15 @@ Partial Class NuevaProyeccion
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Proyección de Poblacion y consumo"
         '
-        'DataGridView1
+        'tabla_proyectos
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(15, 26)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(1183, 147)
-        Me.DataGridView1.TabIndex = 0
+        Me.tabla_proyectos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.tabla_proyectos.Location = New System.Drawing.Point(15, 26)
+        Me.tabla_proyectos.Name = "tabla_proyectos"
+        Me.tabla_proyectos.RowHeadersWidth = 51
+        Me.tabla_proyectos.RowTemplate.Height = 29
+        Me.tabla_proyectos.Size = New System.Drawing.Size(1183, 147)
+        Me.tabla_proyectos.TabIndex = 0
         '
         'NuevaProyeccion
         '
@@ -207,7 +207,7 @@ Partial Class NuevaProyeccion
         Me.Name = "NuevaProyeccion"
         Me.Size = New System.Drawing.Size(1235, 499)
         Me.GroupBox1.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tabla_proyectos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -227,5 +227,5 @@ Partial Class NuevaProyeccion
     Friend WithEvents btn_guardar As Button
     Friend WithEvents btn_nuevo As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents tabla_proyectos As DataGridView
 End Class

@@ -38,7 +38,46 @@
     End Sub
 
     Private Sub btn_inicio_Click(sender As Object, e As EventArgs) Handles btn_nuevo.Click
+        activarcampos(False)
+    End Sub
 
+    Public Sub activarcampos(estado As Boolean)
+        If estado Then
+            text_pais.Enabled = False
+            text_departamento.Enabled = False
+            text_municipio.Enabled = False
+            text_comunidad.Enabled = False
+            text_poblacionInicial.Enabled = False
+            text_tasaCrecimiento.Enabled = False
+            text_dotacion.Enabled = False
+            text_elevacionPuente.Enabled = False
+            text_elevacionTanque.Enabled = False
+            combox_tipoFuente.Enabled = False
+        Else
+            text_pais.Enabled = True
+            text_departamento.Enabled = True
+            text_municipio.Enabled = True
+            text_comunidad.Enabled = True
+            text_poblacionInicial.Enabled = True
+            text_tasaCrecimiento.Enabled = True
+            text_dotacion.Enabled = True
+            text_elevacionPuente.Enabled = True
+            text_elevacionTanque.Enabled = True
+            combox_tipoFuente.Enabled = True
+        End If
+
+    End Sub
+
+    Public Sub limpiarCampos()
+        text_pais.Text = ""
+        text_departamento.Text = ""
+        text_municipio.Text = ""
+        text_comunidad.Text = ""
+        text_poblacionInicial.Text = ""
+        text_tasaCrecimiento.Text = ""
+        text_dotacion.Text = ""
+        text_elevacionPuente.Text = ""
+        text_elevacionTanque.Text = ""
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
@@ -54,10 +93,13 @@
         proyecto.ElevacionPuente1 = Decimal.Parse(text_elevacionPuente.Text)
         proyecto.ElevacionTanque1 = Decimal.Parse(text_elevacionTanque.Text)
         CProyecto.guardarProyecto(proyecto)
+
+        tabla_proyecto.DataSource = CProyecto.listarProyectos()
+        limpiarCampos()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
-
+        limpiarCampos()
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
@@ -77,6 +119,7 @@
     End Sub
 
     Private Sub NuevoProyecto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        tabla_proyecto.DataSource = CProyecto.listarProyectos()
+        activarcampos(True)
     End Sub
 End Class
