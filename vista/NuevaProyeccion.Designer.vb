@@ -37,8 +37,14 @@ Partial Class NuevaProyeccion
         Me.btn_calcular = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.tabla_proyectos = New System.Windows.Forms.DataGridView()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.tabla_proyectos, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -62,7 +68,7 @@ Partial Class NuevaProyeccion
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(235, 44)
+        Me.Label3.Location = New System.Drawing.Point(216, 44)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(125, 20)
         Me.Label3.TabIndex = 2
@@ -70,14 +76,14 @@ Partial Class NuevaProyeccion
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(408, 41)
+        Me.TextBox1.Location = New System.Drawing.Point(389, 41)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(125, 27)
         Me.TextBox1.TabIndex = 3
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(408, 106)
+        Me.TextBox2.Location = New System.Drawing.Point(389, 106)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(125, 27)
         Me.TextBox2.TabIndex = 5
@@ -85,7 +91,7 @@ Partial Class NuevaProyeccion
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(235, 109)
+        Me.Label4.Location = New System.Drawing.Point(216, 109)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(167, 20)
         Me.Label4.TabIndex = 4
@@ -93,7 +99,7 @@ Partial Class NuevaProyeccion
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(803, 41)
+        Me.TextBox3.Location = New System.Drawing.Point(784, 41)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(125, 27)
         Me.TextBox3.TabIndex = 7
@@ -101,7 +107,7 @@ Partial Class NuevaProyeccion
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(630, 44)
+        Me.Label5.Location = New System.Drawing.Point(611, 44)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(143, 20)
         Me.Label5.TabIndex = 6
@@ -109,7 +115,7 @@ Partial Class NuevaProyeccion
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(803, 106)
+        Me.TextBox4.Location = New System.Drawing.Point(784, 106)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(125, 27)
         Me.TextBox4.TabIndex = 9
@@ -117,7 +123,7 @@ Partial Class NuevaProyeccion
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(630, 109)
+        Me.Label6.Location = New System.Drawing.Point(611, 109)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(130, 20)
         Me.Label6.TabIndex = 8
@@ -168,12 +174,12 @@ Partial Class NuevaProyeccion
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.tabla_proyectos)
-        Me.GroupBox1.Location = New System.Drawing.Point(28, 268)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 439)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(1204, 179)
         Me.GroupBox1.TabIndex = 37
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Proyección de Poblacion y consumo"
+        Me.GroupBox1.Text = "Registros Proyección de Poblacion y consumo"
         '
         'tabla_proyectos
         '
@@ -185,11 +191,50 @@ Partial Class NuevaProyeccion
         Me.tabla_proyectos.Size = New System.Drawing.Size(1183, 147)
         Me.tabla_proyectos.TabIndex = 0
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.DataGridView1)
+        Me.GroupBox2.Location = New System.Drawing.Point(3, 254)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(1204, 179)
+        Me.GroupBox2.TabIndex = 38
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Proyección de Poblacion y consumo"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(15, 26)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 29
+        Me.DataGridView1.Size = New System.Drawing.Size(1183, 147)
+        Me.DataGridView1.TabIndex = 0
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(1082, 41)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(125, 27)
+        Me.TextBox5.TabIndex = 40
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(952, 44)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(120, 20)
+        Me.Label7.TabIndex = 39
+        Me.Label7.Text = "Población Inicial:"
+        '
         'NuevaProyeccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.btn_guardar)
@@ -205,9 +250,11 @@ Partial Class NuevaProyeccion
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "NuevaProyeccion"
-        Me.Size = New System.Drawing.Size(1235, 499)
+        Me.Size = New System.Drawing.Size(1235, 673)
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.tabla_proyectos, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -228,4 +275,8 @@ Partial Class NuevaProyeccion
     Friend WithEvents btn_calcular As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents tabla_proyectos As DataGridView
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label7 As Label
 End Class

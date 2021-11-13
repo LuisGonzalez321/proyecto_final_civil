@@ -1,4 +1,4 @@
-﻿Public Class Proyeccion
+﻿Public Class MProyeccion
     Private perdidasTecnicas As Decimal
     Private consumoPublico As Decimal
     Private consumoComercial As Decimal

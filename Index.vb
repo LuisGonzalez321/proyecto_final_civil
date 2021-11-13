@@ -89,7 +89,11 @@
         panelGeneral.Controls.Add(resultados)
     End Sub
 
-    Private Sub btn__Click(sender As Object, e As EventArgs) Handles btn_calidadAgua.Click
+    Private Sub btn__Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn_calidadAgua_Click(sender As Object, e As EventArgs) Handles btn_calidadAgua.Click
         Dim calidadAgua As New CalidadAgua
         label_titulo.Text = "Calidad de agua"
         panelGeneral.Controls.Clear()

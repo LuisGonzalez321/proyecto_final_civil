@@ -1,6 +1,7 @@
 ﻿Imports System.Data.OleDb
 Public Class CBomba
 
+    Dim bomba As Bomba
 
     Public Shared Function guardarBomba(bomba As Bomba)
 
@@ -24,7 +25,7 @@ Public Class CBomba
         Try
             comando.ExecuteNonQuery()
             conexion_.Close()
-            MsgBox("Se guardó xd")
+            MsgBox("Se guardó ")
         Catch ex As Exception
             MsgBox("No se ha guardado, " + ex.Message)
         End Try

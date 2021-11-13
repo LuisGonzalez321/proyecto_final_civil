@@ -22,8 +22,16 @@ Partial Class Ayuda
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.SuspendLayout()
+        '
+        'Ayuda
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Name = "Ayuda"
+        Me.Size = New System.Drawing.Size(801, 680)
+        Me.ResumeLayout(False)
+
     End Sub
 
 End Class

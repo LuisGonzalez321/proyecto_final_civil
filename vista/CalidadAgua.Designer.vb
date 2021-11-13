@@ -311,7 +311,7 @@ Partial Class CalidadAgua
         Me.btn_guardar.FlatAppearance.BorderSize = 0
         Me.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_guardar.ForeColor = System.Drawing.Color.White
-        Me.btn_guardar.Location = New System.Drawing.Point(487, 415)
+        Me.btn_guardar.Location = New System.Drawing.Point(493, 489)
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
         Me.btn_guardar.Size = New System.Drawing.Size(202, 39)
@@ -325,7 +325,7 @@ Partial Class CalidadAgua
         Me.btn_calcular.FlatAppearance.BorderSize = 0
         Me.btn_calcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_calcular.ForeColor = System.Drawing.Color.White
-        Me.btn_calcular.Location = New System.Drawing.Point(487, 489)
+        Me.btn_calcular.Location = New System.Drawing.Point(493, 415)
         Me.btn_calcular.Name = "btn_calcular"
         Me.btn_calcular.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
         Me.btn_calcular.Size = New System.Drawing.Size(202, 39)
@@ -333,10 +333,11 @@ Partial Class CalidadAgua
         Me.btn_calcular.Text = "Calcular"
         Me.btn_calcular.UseVisualStyleBackColor = False
         '
-        'MCalidadAgua
+        'CalidadAgua
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.btn_guardar)
         Me.Controls.Add(Me.btn_calcular)
@@ -369,7 +370,7 @@ Partial Class CalidadAgua
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.text_oxigeno)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "MCalidadAgua"
+        Me.Name = "CalidadAgua"
         Me.Size = New System.Drawing.Size(974, 618)
         Me.ResumeLayout(False)
         Me.PerformLayout()

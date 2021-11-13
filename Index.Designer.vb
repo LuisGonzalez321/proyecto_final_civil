@@ -190,7 +190,7 @@ Partial Class Index
         Me.ListBox1.ItemHeight = 20
         Me.ListBox1.Location = New System.Drawing.Point(652, 39)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(581, 104)
+        Me.ListBox1.Size = New System.Drawing.Size(581, 84)
         Me.ListBox1.TabIndex = 6
         '
         'panelGeneral
