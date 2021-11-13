@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Index
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,8 +22,9 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Index))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btn_calidadAgua = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -31,6 +32,7 @@ Partial Class Form1
         Me.btn_inicio = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.panelGeneral = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -38,7 +40,6 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Splitter1 = New System.Windows.Forms.Splitter()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -48,6 +49,7 @@ Partial Class Form1
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(150, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btn_calidadAgua)
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Button3)
@@ -60,13 +62,27 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(282, 710)
         Me.Panel1.TabIndex = 0
         '
+        'btn_calidadAgua
+        '
+        Me.btn_calidadAgua.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.btn_calidadAgua.FlatAppearance.BorderSize = 0
+        Me.btn_calidadAgua.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_calidadAgua.ForeColor = System.Drawing.Color.White
+        Me.btn_calidadAgua.Location = New System.Drawing.Point(0, 451)
+        Me.btn_calidadAgua.Name = "btn_calidadAgua"
+        Me.btn_calidadAgua.Padding = New System.Windows.Forms.Padding(0, 0, 20, 0)
+        Me.btn_calidadAgua.Size = New System.Drawing.Size(272, 53)
+        Me.btn_calidadAgua.TabIndex = 13
+        Me.btn_calidadAgua.Text = "Calidad de agua"
+        Me.btn_calidadAgua.UseVisualStyleBackColor = False
+        '
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(0, 510)
+        Me.Button5.Location = New System.Drawing.Point(0, 569)
         Me.Button5.Name = "Button5"
         Me.Button5.Padding = New System.Windows.Forms.Padding(0, 0, 80, 0)
         Me.Button5.Size = New System.Drawing.Size(272, 53)
@@ -80,7 +96,7 @@ Partial Class Form1
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(0, 451)
+        Me.Button4.Location = New System.Drawing.Point(0, 510)
         Me.Button4.Name = "Button4"
         Me.Button4.Padding = New System.Windows.Forms.Padding(0, 0, 57, 0)
         Me.Button4.Size = New System.Drawing.Size(272, 53)
@@ -157,6 +173,17 @@ Partial Class Form1
         Me.Panel2.Size = New System.Drawing.Size(1245, 710)
         Me.Panel2.TabIndex = 1
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(150, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(652, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(184, 28)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Lista de proyectos"
+        '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
@@ -223,18 +250,7 @@ Partial Class Form1
         Me.Splitter1.TabIndex = 0
         Me.Splitter1.TabStop = False
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(150, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(652, 9)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(184, 28)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Lista de proyectos"
-        '
-        'Form1
+        'Index
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -242,7 +258,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form1"
+        Me.Name = "Index"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "index"
         Me.Panel1.ResumeLayout(False)
@@ -270,4 +286,5 @@ Partial Class Form1
     Friend WithEvents btn_nuevaProyeccion As Button
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents btn_calidadAgua As Button
 End Class

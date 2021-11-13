@@ -34,7 +34,7 @@ Partial Class NuevaProyeccion
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.btn_guardar = New System.Windows.Forms.Button()
-        Me.btn_nuevo = New System.Windows.Forms.Button()
+        Me.btn_calcular = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.tabla_proyectos = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
@@ -151,19 +151,19 @@ Partial Class NuevaProyeccion
         Me.btn_guardar.Text = "Guardar"
         Me.btn_guardar.UseVisualStyleBackColor = False
         '
-        'btn_nuevo
+        'btn_calcular
         '
-        Me.btn_nuevo.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.btn_nuevo.FlatAppearance.BorderSize = 0
-        Me.btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_nuevo.ForeColor = System.Drawing.Color.White
-        Me.btn_nuevo.Location = New System.Drawing.Point(705, 174)
-        Me.btn_nuevo.Name = "btn_nuevo"
-        Me.btn_nuevo.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
-        Me.btn_nuevo.Size = New System.Drawing.Size(202, 39)
-        Me.btn_nuevo.TabIndex = 34
-        Me.btn_nuevo.Text = "Calcular"
-        Me.btn_nuevo.UseVisualStyleBackColor = False
+        Me.btn_calcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.btn_calcular.FlatAppearance.BorderSize = 0
+        Me.btn_calcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_calcular.ForeColor = System.Drawing.Color.White
+        Me.btn_calcular.Location = New System.Drawing.Point(705, 174)
+        Me.btn_calcular.Name = "btn_calcular"
+        Me.btn_calcular.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
+        Me.btn_calcular.Size = New System.Drawing.Size(202, 39)
+        Me.btn_calcular.TabIndex = 34
+        Me.btn_calcular.Text = "Calcular"
+        Me.btn_calcular.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
@@ -193,7 +193,7 @@ Partial Class NuevaProyeccion
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.btn_guardar)
-        Me.Controls.Add(Me.btn_nuevo)
+        Me.Controls.Add(Me.btn_calcular)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBox3)
@@ -225,7 +225,7 @@ Partial Class NuevaProyeccion
     Friend WithEvents Label6 As Label
     Friend WithEvents btn_cancelar As Button
     Friend WithEvents btn_guardar As Button
-    Friend WithEvents btn_nuevo As Button
+    Friend WithEvents btn_calcular As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents tabla_proyectos As DataGridView
 End Class

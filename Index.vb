@@ -1,6 +1,11 @@
-﻿Public Class Form1
+﻿Public Class Index
+
+    Public idProyecto As Integer
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         enlace()
+
+
     End Sub
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
@@ -23,7 +28,7 @@
 
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) 
+    Private Sub Label3_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -51,7 +56,8 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim calculoBomba As New CalculoBomba
+        idProyecto = 1
+        Dim calculoBomba As New CalculoBomba(idProyecto)
         label_titulo.Text = "Calculo de bomba"
         panelGeneral.Controls.Clear()
         panelGeneral.Controls.Add(calculoBomba)
@@ -81,5 +87,12 @@
         label_titulo.Text = "Resultados"
         panelGeneral.Controls.Clear()
         panelGeneral.Controls.Add(resultados)
+    End Sub
+
+    Private Sub btn__Click(sender As Object, e As EventArgs) Handles btn_calidadAgua.Click
+        Dim calidadAgua As New CalidadAgua
+        label_titulo.Text = "Calidad de agua"
+        panelGeneral.Controls.Clear()
+        panelGeneral.Controls.Add(calidadAgua)
     End Sub
 End Class

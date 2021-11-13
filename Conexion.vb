@@ -1,5 +1,4 @@
-﻿Imports System.Data
-Imports System.Data.OleDb
+﻿Imports System.Data.OleDb
 
 Module Conexion
 
@@ -9,7 +8,7 @@ Module Conexion
 
     Sub enlace()
         Try
-            conexion_.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\lgabr\OneDrive\Escritorio\CIVIL\proyecto_final_civil\proyecto_civil.accdb"
+            conexion_.ConnectionString = "Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\lgabr\OneDrive\Escritorio\CIVIL\proyecto_final_civil\proyecto_civil.accdb"
             conexion_.Open()
             estado = "conectado"
             MsgBox(estado)

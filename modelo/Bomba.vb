@@ -1,9 +1,9 @@
 ﻿Public Class Bomba
-    Private alturaBombeo As New Decimal
-    Private densidadAgua As New Decimal
-    Private coeficienteGravedad As New Decimal
-    Private caudal As New Decimal
-    Private IdProyecto As Integer
+    Private alturaBombeo As Decimal
+    Private densidadAgua As Decimal
+    Private coeficienteGravedad As Decimal
+    Private caudal As Decimal
+    Private idProyecto As Integer
 
 
     Public Sub New()
@@ -11,7 +11,7 @@
     End Sub
 
     Public Sub New(idProyecto As Integer, alturaBombeo As Decimal, densidadAgua As Decimal, coeficienteGravedad As Decimal, caudal As Decimal)
-        Me.IdProyecto = idProyecto
+        Me.idProyecto = idProyecto
         Me.alturaBombeo = alturaBombeo
         Me.densidadAgua = densidadAgua
         Me.coeficienteGravedad = coeficienteGravedad
@@ -56,15 +56,18 @@
 
     Public Property IdProyecto1 As Integer
         Get
-            Return IdProyecto
+            Return idProyecto
         End Get
         Set(value As Integer)
-            IdProyecto = value
+            idProyecto = value
         End Set
     End Property
 
     Public Function calcularW()
-        Return alturaBombeo * densidadAgua * coeficienteGravedad * coeficienteGravedad * caudal
+        Dim calculo As Decimal
+        calculo = alturaBombeo * densidadAgua * coeficienteGravedad * caudal
+        MsgBox(calculo.ToString())
+        Return calculo
     End Function
 
     Public Function calcularHP()
