@@ -41,10 +41,13 @@ Partial Class NuevaProyeccion
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.text_tasaCrecimiento = New System.Windows.Forms.NumericUpDown()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.tabla_proyectos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.text_tasaCrecimiento, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -135,7 +138,7 @@ Partial Class NuevaProyeccion
         Me.btn_cancelar.FlatAppearance.BorderSize = 0
         Me.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_cancelar.ForeColor = System.Drawing.Color.White
-        Me.btn_cancelar.Location = New System.Drawing.Point(455, 174)
+        Me.btn_cancelar.Location = New System.Drawing.Point(530, 183)
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
         Me.btn_cancelar.Size = New System.Drawing.Size(202, 39)
@@ -149,7 +152,7 @@ Partial Class NuevaProyeccion
         Me.btn_guardar.FlatAppearance.BorderSize = 0
         Me.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_guardar.ForeColor = System.Drawing.Color.White
-        Me.btn_guardar.Location = New System.Drawing.Point(175, 174)
+        Me.btn_guardar.Location = New System.Drawing.Point(280, 183)
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
         Me.btn_guardar.Size = New System.Drawing.Size(202, 39)
@@ -163,7 +166,7 @@ Partial Class NuevaProyeccion
         Me.btn_calcular.FlatAppearance.BorderSize = 0
         Me.btn_calcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_calcular.ForeColor = System.Drawing.Color.White
-        Me.btn_calcular.Location = New System.Drawing.Point(705, 174)
+        Me.btn_calcular.Location = New System.Drawing.Point(28, 183)
         Me.btn_calcular.Name = "btn_calcular"
         Me.btn_calcular.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
         Me.btn_calcular.Size = New System.Drawing.Size(202, 39)
@@ -227,11 +230,32 @@ Partial Class NuevaProyeccion
         Me.Label7.TabIndex = 39
         Me.Label7.Text = "Población Inicial:"
         '
+        'text_tasaCrecimiento
+        '
+        Me.text_tasaCrecimiento.Location = New System.Drawing.Point(1082, 111)
+        Me.text_tasaCrecimiento.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.text_tasaCrecimiento.Name = "text_tasaCrecimiento"
+        Me.text_tasaCrecimiento.Size = New System.Drawing.Size(125, 27)
+        Me.text_tasaCrecimiento.TabIndex = 42
+        Me.text_tasaCrecimiento.ThousandsSeparator = True
+        Me.text_tasaCrecimiento.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(952, 113)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(45, 20)
+        Me.Label8.TabIndex = 41
+        Me.Label8.Text = "Años:"
+        '
         'NuevaProyeccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.Controls.Add(Me.text_tasaCrecimiento)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.GroupBox2)
@@ -255,6 +279,7 @@ Partial Class NuevaProyeccion
         CType(Me.tabla_proyectos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.text_tasaCrecimiento, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -279,4 +304,6 @@ Partial Class NuevaProyeccion
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Public WithEvents text_tasaCrecimiento As NumericUpDown
 End Class

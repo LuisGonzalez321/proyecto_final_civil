@@ -37,7 +37,8 @@
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        Me.Close()
+        Me.Dispose()
+        Inicio.Dispose()
     End Sub
 
     Private Sub Panel5_Paint(sender As Object, e As PaintEventArgs)

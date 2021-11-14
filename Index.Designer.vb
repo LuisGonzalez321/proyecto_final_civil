@@ -186,11 +186,12 @@ Partial Class Index
         '
         'ListBox1
         '
+        Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 20
         Me.ListBox1.Location = New System.Drawing.Point(652, 39)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(581, 84)
+        Me.ListBox1.Size = New System.Drawing.Size(581, 82)
         Me.ListBox1.TabIndex = 6
         '
         'panelGeneral
@@ -217,7 +218,7 @@ Partial Class Index
         Me.label_titulo.AutoSize = True
         Me.label_titulo.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.label_titulo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(150, Byte), Integer))
-        Me.label_titulo.Location = New System.Drawing.Point(10, 135)
+        Me.label_titulo.Location = New System.Drawing.Point(10, 126)
         Me.label_titulo.Name = "label_titulo"
         Me.label_titulo.Size = New System.Drawing.Size(64, 28)
         Me.label_titulo.TabIndex = 3
