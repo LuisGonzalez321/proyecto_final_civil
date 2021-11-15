@@ -12,7 +12,10 @@ Module Conexion
     Sub enlace()
         Try
 
-            conexion_.ConnectionString = "Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\proyecto_civil.accdb"
+            Dim cadena As String
+            cadena = My.Computer.FileSystem.ReadAllText("C:/cadena.txt")
+
+            conexion_.ConnectionString = "Provider=Microsoft.ACE.OLEDB.16.0;Data Source=" & cadena
             conexion_.Open()
             estado = "Conectado con la base de datos"
             MsgBox(estado)

@@ -77,8 +77,19 @@ Public Class CProyecto
         Return dt
     End Function
 
-    Public Shared Function obtenerId(dt As DataTable, sender As Object, e As EventArgs)
-        'Dim valor = dt.Rows(e.).Item("Id")
+    Public Shared Function queryExex(query As String) As DataTable
+        comando = New OleDb.OleDbCommand(query, conexion_)
+        Dim dt As New DataTable
+        Dim da As New OleDbDataAdapter
+
+        Try
+            da.SelectCommand = comando
+            da.Fill(dt)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        Return dt 'Dim valor = dt.Rows(e.).Item("Id")
     End Function
 
 End Class
