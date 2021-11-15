@@ -57,4 +57,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Water Supply es un software el cual se encarga de hacer diferentes estudios hidráulicos
+a la hora de realizar un abastecimiento de agua en una zona rural
+
+El objetivo principal de este programa es ayudar a los ingenieros encargados de estos 
+proyectos en los diferentes cálculos necesarios para realizar este mismo y terminarlo 
+en un menor tiempo de  una manera más fácil, rápida, eficaz y segura
+
+Consiste en un software el cual tiene una barra de menús en el que se concentra en la 
+nueva proyección cálculo de bombeo, calidad de agua y el resultado del cálculo de bombeo
+La calidad de agua tiene dos categoría 
+•Categoria 1-A, Aguas que desde el punto de vista sanitario pueden ser 
+acondicionadas con la sola adición de desinfectantes.
+ • Categoria 1-B, Aguas que pueden ser acondicionadas por medio de tratamientos 
+convencionales de coagulación, floculación, sedimentación, filtración y coloración</value>
+  </data>
 </root>

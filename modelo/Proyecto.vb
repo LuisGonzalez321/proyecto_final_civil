@@ -4,18 +4,18 @@
     Private departamento As String
     Private municipio As String
     Private comunidad As String
-    Private poblacionInicial As Decimal
-    Private tasaCrecimiento As Decimal
-    Private dotacion As Decimal
+    Private poblacionInicial As Double
+    Private tasaCrecimiento As Double
+    Private dotacion As Double
     Private tipoFuente As String
-    Private elevacionPuente As Decimal
-    Private elevacionTanque As Decimal
+    Private elevacionPuente As Double
+    Private elevacionTanque As Double
 
     Public Sub New()
 
     End Sub
 
-    Public Sub New(idProyecto As Integer, pais As String, departamento As String, municipio As String, comunidad As String, poblacionInicial As Decimal, tasaCrecimiento As Decimal, dotacion As Decimal, tipoFuente As String, elevacionPuente As Decimal, elevacionTanque As Decimal)
+    Public Sub New(idProyecto As Integer, pais As String, departamento As String, municipio As String, comunidad As String, poblacionInicial As Double, tasaCrecimiento As Double, dotacion As Double, tipoFuente As String, elevacionPuente As Double, elevacionTanque As Double)
         Me.idProyecto = idProyecto
         Me.pais = pais
         Me.departamento = departamento
@@ -65,29 +65,29 @@
         End Set
     End Property
 
-    Public Property PoblacionInicial1 As Decimal
+    Public Property PoblacionInicial1 As Double
         Get
             Return poblacionInicial
         End Get
-        Set(value As Decimal)
+        Set(value As Double)
             poblacionInicial = value
         End Set
     End Property
 
-    Public Property TasaCrecimiento1 As Decimal
+    Public Property TasaCrecimiento1 As Double
         Get
             Return tasaCrecimiento
         End Get
-        Set(value As Decimal)
+        Set(value As Double)
             tasaCrecimiento = value
         End Set
     End Property
 
-    Public Property Dotacion1 As Decimal
+    Public Property Dotacion1 As Double
         Get
             Return dotacion
         End Get
-        Set(value As Decimal)
+        Set(value As Double)
             dotacion = value
         End Set
     End Property
@@ -101,20 +101,20 @@
         End Set
     End Property
 
-    Public Property ElevacionPuente1 As Decimal
+    Public Property ElevacionPuente1 As Double
         Get
             Return elevacionPuente
         End Get
-        Set(value As Decimal)
+        Set(value As Double)
             elevacionPuente = value
         End Set
     End Property
 
-    Public Property ElevacionTanque1 As Decimal
+    Public Property ElevacionTanque1 As Double
         Get
             Return elevacionTanque
         End Get
-        Set(value As Decimal)
+        Set(value As Double)
             elevacionTanque = value
         End Set
     End Property

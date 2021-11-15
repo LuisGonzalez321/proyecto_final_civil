@@ -636,11 +636,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lgabr\\source\\repos\\proyecto_final_civil\\proyecto_final_civil.vbproj",
+      "projectUniqueName": "D:\\proyecto_final_civil\\proyecto_final_civil.vbproj",
       "projectName": "proyecto_final_civil",
-      "projectPath": "C:\\Users\\lgabr\\source\\repos\\proyecto_final_civil\\proyecto_final_civil.vbproj",
+      "projectPath": "D:\\proyecto_final_civil\\proyecto_final_civil.vbproj",
       "packagesPath": "C:\\Users\\lgabr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lgabr\\source\\repos\\proyecto_final_civil\\obj\\",
+      "outputPath": "D:\\proyecto_final_civil\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lgabr\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -22,16 +22,30 @@ Partial Class Ayuda
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Ayuda))
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(22, 28)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(623, 280)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = resources.GetString("Label1.Text")
         '
         'Ayuda
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.Label1)
         Me.Name = "Ayuda"
-        Me.Size = New System.Drawing.Size(801, 680)
+        Me.Size = New System.Drawing.Size(676, 410)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents Label1 As Label
 End Class

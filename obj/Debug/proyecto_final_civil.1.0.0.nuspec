@@ -17,7 +17,7 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="C:\Users\lgabr\source\repos\proyecto_final_civil\bin\Debug\net5.0-windows\proyecto_final_civil.runtimeconfig.json" target="lib\net5.0-windows7.0\proyecto_final_civil.runtimeconfig.json" />
-    <file src="C:\Users\lgabr\source\repos\proyecto_final_civil\bin\Debug\net5.0-windows\proyecto_final_civil.dll" target="lib\net5.0-windows7.0\proyecto_final_civil.dll" />
+    <file src="D:\proyecto_final_civil\bin\Debug\net5.0-windows\proyecto_final_civil.runtimeconfig.json" target="lib\net5.0-windows7.0\proyecto_final_civil.runtimeconfig.json" />
+    <file src="D:\proyecto_final_civil\bin\Debug\net5.0-windows\proyecto_final_civil.dll" target="lib\net5.0-windows7.0\proyecto_final_civil.dll" />
   </files>
 </package>

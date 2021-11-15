@@ -168,9 +168,9 @@ Partial Class Index
         Me.Panel2.Controls.Add(Me.Panel3)
         Me.Panel2.Controls.Add(Me.Splitter1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel2.Location = New System.Drawing.Point(275, 0)
+        Me.Panel2.Location = New System.Drawing.Point(270, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1245, 710)
+        Me.Panel2.Size = New System.Drawing.Size(1050, 710)
         Me.Panel2.TabIndex = 1
         '
         'Label2
@@ -178,7 +178,7 @@ Partial Class Index
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(150, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(652, 9)
+        Me.Label2.Location = New System.Drawing.Point(450, 9)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(184, 28)
         Me.Label2.TabIndex = 7
@@ -189,7 +189,7 @@ Partial Class Index
         Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 20
-        Me.ListBox1.Location = New System.Drawing.Point(652, 39)
+        Me.ListBox1.Location = New System.Drawing.Point(450, 40)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(581, 82)
         Me.ListBox1.TabIndex = 6
@@ -200,13 +200,13 @@ Partial Class Index
         Me.panelGeneral.BackColor = System.Drawing.Color.White
         Me.panelGeneral.Location = New System.Drawing.Point(3, 173)
         Me.panelGeneral.Name = "panelGeneral"
-        Me.panelGeneral.Size = New System.Drawing.Size(1239, 534)
+        Me.panelGeneral.Size = New System.Drawing.Size(1044, 534)
         Me.panelGeneral.TabIndex = 5
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(1210, 3)
+        Me.PictureBox2.Location = New System.Drawing.Point(1017, 0)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -255,7 +255,7 @@ Partial Class Index
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1520, 710)
+        Me.ClientSize = New System.Drawing.Size(1320, 710)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

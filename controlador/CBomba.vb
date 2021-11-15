@@ -25,14 +25,14 @@ Public Class CBomba
         Try
             comando.ExecuteNonQuery()
             conexion_.Close()
-            MsgBox("Se guardó ")
+            MsgBox("Se guardó la información")
         Catch ex As Exception
             MsgBox("No se ha guardado, " + ex.Message)
         End Try
     End Function
 
-    Public Shared Function listarBomba() As DataTable
-        comando = New OleDb.OleDbCommand("select * from Bomba", conexion_)
+    Public Shared Function listarBomba(id As Integer) As DataTable
+        comando = New OleDb.OleDbCommand("select * from Bomba where idProyecto=" & id, conexion_)
         Dim dt As New DataTable
         Dim da As New OleDbDataAdapter
 

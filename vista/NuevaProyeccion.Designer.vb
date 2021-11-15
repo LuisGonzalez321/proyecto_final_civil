@@ -22,15 +22,15 @@ Partial Class NuevaProyeccion
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.label_tasa = New System.Windows.Forms.Label()
+        Me.label_dotacion = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txt_perdidas = New System.Windows.Forms.TextBox()
+        Me.txt_consumoP = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txt_consumoC = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txt_consumoI = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.btn_guardar = New System.Windows.Forms.Button()
@@ -38,95 +38,101 @@ Partial Class NuevaProyeccion
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.tabla_proyectos = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.listaCalculos = New System.Windows.Forms.DataGridView()
+        Me.txt_poblacion0 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.text_tasaCrecimiento = New System.Windows.Forms.NumericUpDown()
+        Me.text_años = New System.Windows.Forms.NumericUpDown()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.txt_factorcmd = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txt_almacenamiento = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txt_cmh = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.tabla_proyectos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.text_tasaCrecimiento, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.listaCalculos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.text_años, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'label_tasa
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(28, 44)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(147, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Tasa de crecimiento: "
+        Me.label_tasa.AutoSize = True
+        Me.label_tasa.Location = New System.Drawing.Point(28, 20)
+        Me.label_tasa.Name = "label_tasa"
+        Me.label_tasa.Size = New System.Drawing.Size(147, 20)
+        Me.label_tasa.TabIndex = 0
+        Me.label_tasa.Text = "Tasa de crecimiento: "
         '
-        'Label2
+        'label_dotacion
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(28, 109)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(77, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Dotación: "
+        Me.label_dotacion.AutoSize = True
+        Me.label_dotacion.Location = New System.Drawing.Point(224, 20)
+        Me.label_dotacion.Name = "label_dotacion"
+        Me.label_dotacion.Size = New System.Drawing.Size(77, 20)
+        Me.label_dotacion.TabIndex = 1
+        Me.label_dotacion.Text = "Dotación: "
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(216, 44)
+        Me.Label3.Location = New System.Drawing.Point(28, 72)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(125, 20)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Perdidas técnicas:"
         '
-        'TextBox1
+        'txt_perdidas
         '
-        Me.TextBox1.Location = New System.Drawing.Point(389, 41)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox1.TabIndex = 3
+        Me.txt_perdidas.Location = New System.Drawing.Point(201, 69)
+        Me.txt_perdidas.Name = "txt_perdidas"
+        Me.txt_perdidas.Size = New System.Drawing.Size(125, 27)
+        Me.txt_perdidas.TabIndex = 3
         '
-        'TextBox2
+        'txt_consumoP
         '
-        Me.TextBox2.Location = New System.Drawing.Point(389, 106)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox2.TabIndex = 5
+        Me.txt_consumoP.Location = New System.Drawing.Point(201, 134)
+        Me.txt_consumoP.Name = "txt_consumoP"
+        Me.txt_consumoP.Size = New System.Drawing.Size(125, 27)
+        Me.txt_consumoP.TabIndex = 5
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(216, 109)
+        Me.Label4.Location = New System.Drawing.Point(28, 137)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(167, 20)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Consumo Público o inst:"
         '
-        'TextBox3
+        'txt_consumoC
         '
-        Me.TextBox3.Location = New System.Drawing.Point(784, 41)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox3.TabIndex = 7
+        Me.txt_consumoC.Location = New System.Drawing.Point(491, 73)
+        Me.txt_consumoC.Name = "txt_consumoC"
+        Me.txt_consumoC.Size = New System.Drawing.Size(125, 27)
+        Me.txt_consumoC.TabIndex = 7
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(611, 44)
+        Me.Label5.Location = New System.Drawing.Point(342, 76)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(143, 20)
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "Consumo comercial:"
         '
-        'TextBox4
+        'txt_consumoI
         '
-        Me.TextBox4.Location = New System.Drawing.Point(784, 106)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox4.TabIndex = 9
+        Me.txt_consumoI.Location = New System.Drawing.Point(478, 138)
+        Me.txt_consumoI.Name = "txt_consumoI"
+        Me.txt_consumoI.Size = New System.Drawing.Size(138, 27)
+        Me.txt_consumoI.TabIndex = 9
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(611, 109)
+        Me.Label6.Location = New System.Drawing.Point(342, 141)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(130, 20)
         Me.Label6.TabIndex = 8
@@ -138,7 +144,7 @@ Partial Class NuevaProyeccion
         Me.btn_cancelar.FlatAppearance.BorderSize = 0
         Me.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_cancelar.ForeColor = System.Drawing.Color.White
-        Me.btn_cancelar.Location = New System.Drawing.Point(530, 183)
+        Me.btn_cancelar.Location = New System.Drawing.Point(224, 200)
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
         Me.btn_cancelar.Size = New System.Drawing.Size(202, 39)
@@ -152,7 +158,7 @@ Partial Class NuevaProyeccion
         Me.btn_guardar.FlatAppearance.BorderSize = 0
         Me.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_guardar.ForeColor = System.Drawing.Color.White
-        Me.btn_guardar.Location = New System.Drawing.Point(280, 183)
+        Me.btn_guardar.Location = New System.Drawing.Point(18, 452)
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
         Me.btn_guardar.Size = New System.Drawing.Size(202, 39)
@@ -166,7 +172,7 @@ Partial Class NuevaProyeccion
         Me.btn_calcular.FlatAppearance.BorderSize = 0
         Me.btn_calcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_calcular.ForeColor = System.Drawing.Color.White
-        Me.btn_calcular.Location = New System.Drawing.Point(28, 183)
+        Me.btn_calcular.Location = New System.Drawing.Point(16, 200)
         Me.btn_calcular.Name = "btn_calcular"
         Me.btn_calcular.Padding = New System.Windows.Forms.Padding(0, 0, 100, 0)
         Me.btn_calcular.Size = New System.Drawing.Size(202, 39)
@@ -177,9 +183,9 @@ Partial Class NuevaProyeccion
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.tabla_proyectos)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 439)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 506)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1204, 179)
+        Me.GroupBox1.Size = New System.Drawing.Size(1121, 179)
         Me.GroupBox1.TabIndex = 37
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Registros Proyección de Poblacion y consumo"
@@ -191,109 +197,161 @@ Partial Class NuevaProyeccion
         Me.tabla_proyectos.Name = "tabla_proyectos"
         Me.tabla_proyectos.RowHeadersWidth = 51
         Me.tabla_proyectos.RowTemplate.Height = 29
-        Me.tabla_proyectos.Size = New System.Drawing.Size(1183, 147)
+        Me.tabla_proyectos.Size = New System.Drawing.Size(1106, 147)
         Me.tabla_proyectos.TabIndex = 0
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.DataGridView1)
+        Me.GroupBox2.Controls.Add(Me.listaCalculos)
         Me.GroupBox2.Location = New System.Drawing.Point(3, 254)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1204, 179)
+        Me.GroupBox2.Size = New System.Drawing.Size(1130, 179)
         Me.GroupBox2.TabIndex = 38
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Proyección de Poblacion y consumo"
         '
-        'DataGridView1
+        'listaCalculos
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(15, 26)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(1183, 147)
-        Me.DataGridView1.TabIndex = 0
+        Me.listaCalculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.listaCalculos.Location = New System.Drawing.Point(15, 26)
+        Me.listaCalculos.Name = "listaCalculos"
+        Me.listaCalculos.RowHeadersWidth = 51
+        Me.listaCalculos.RowTemplate.Height = 29
+        Me.listaCalculos.Size = New System.Drawing.Size(1115, 147)
+        Me.listaCalculos.TabIndex = 0
         '
-        'TextBox5
+        'txt_poblacion0
         '
-        Me.TextBox5.Location = New System.Drawing.Point(1082, 41)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox5.TabIndex = 40
+        Me.txt_poblacion0.Location = New System.Drawing.Point(766, 73)
+        Me.txt_poblacion0.Name = "txt_poblacion0"
+        Me.txt_poblacion0.Size = New System.Drawing.Size(125, 27)
+        Me.txt_poblacion0.TabIndex = 40
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(952, 44)
+        Me.Label7.Location = New System.Drawing.Point(635, 80)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(120, 20)
         Me.Label7.TabIndex = 39
         Me.Label7.Text = "Población Inicial:"
         '
-        'text_tasaCrecimiento
+        'text_años
         '
-        Me.text_tasaCrecimiento.Location = New System.Drawing.Point(1082, 111)
-        Me.text_tasaCrecimiento.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.text_tasaCrecimiento.Name = "text_tasaCrecimiento"
-        Me.text_tasaCrecimiento.Size = New System.Drawing.Size(125, 27)
-        Me.text_tasaCrecimiento.TabIndex = 42
-        Me.text_tasaCrecimiento.ThousandsSeparator = True
-        Me.text_tasaCrecimiento.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.text_años.Location = New System.Drawing.Point(766, 133)
+        Me.text_años.Name = "text_años"
+        Me.text_años.Size = New System.Drawing.Size(125, 27)
+        Me.text_años.TabIndex = 42
+        Me.text_años.ThousandsSeparator = True
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(952, 113)
+        Me.Label8.Location = New System.Drawing.Point(640, 140)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(45, 20)
         Me.Label8.TabIndex = 41
         Me.Label8.Text = "Años:"
+        '
+        'txt_factorcmd
+        '
+        Me.txt_factorcmd.Location = New System.Drawing.Point(1008, 69)
+        Me.txt_factorcmd.Name = "txt_factorcmd"
+        Me.txt_factorcmd.Size = New System.Drawing.Size(125, 27)
+        Me.txt_factorcmd.TabIndex = 46
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(913, 76)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(89, 20)
+        Me.Label9.TabIndex = 45
+        Me.Label9.Text = "Factor CMD:"
+        '
+        'txt_almacenamiento
+        '
+        Me.txt_almacenamiento.Location = New System.Drawing.Point(771, 206)
+        Me.txt_almacenamiento.Name = "txt_almacenamiento"
+        Me.txt_almacenamiento.Size = New System.Drawing.Size(125, 27)
+        Me.txt_almacenamiento.TabIndex = 44
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(640, 213)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(125, 20)
+        Me.Label10.TabIndex = 43
+        Me.Label10.Text = "Almacenamiento:"
+        '
+        'txt_cmh
+        '
+        Me.txt_cmh.Location = New System.Drawing.Point(1008, 132)
+        Me.txt_cmh.Name = "txt_cmh"
+        Me.txt_cmh.Size = New System.Drawing.Size(125, 27)
+        Me.txt_cmh.TabIndex = 48
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(913, 135)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(89, 20)
+        Me.Label11.TabIndex = 47
+        Me.Label11.Text = "Factor CMH:"
         '
         'NuevaProyeccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.Controls.Add(Me.text_tasaCrecimiento)
+        Me.Controls.Add(Me.txt_cmh)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.txt_factorcmd)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.txt_almacenamiento)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.text_años)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.txt_poblacion0)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.btn_guardar)
         Me.Controls.Add(Me.btn_calcular)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txt_consumoI)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txt_consumoC)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txt_consumoP)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt_perdidas)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.label_dotacion)
+        Me.Controls.Add(Me.label_tasa)
         Me.Name = "NuevaProyeccion"
-        Me.Size = New System.Drawing.Size(1235, 673)
+        Me.Size = New System.Drawing.Size(1148, 720)
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.tabla_proyectos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.text_tasaCrecimiento, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.listaCalculos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.text_años, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents label_tasa As Label
+    Friend WithEvents label_dotacion As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txt_perdidas As TextBox
+    Friend WithEvents txt_consumoP As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txt_consumoC As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txt_consumoI As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents btn_cancelar As Button
     Friend WithEvents btn_guardar As Button
@@ -301,9 +359,15 @@ Partial Class NuevaProyeccion
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents tabla_proyectos As DataGridView
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents listaCalculos As DataGridView
+    Friend WithEvents txt_poblacion0 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Public WithEvents text_tasaCrecimiento As NumericUpDown
+    Public WithEvents text_años As NumericUpDown
+    Friend WithEvents txt_factorcmd As TextBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents txt_almacenamiento As TextBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents txt_cmh As TextBox
+    Friend WithEvents Label11 As Label
 End Class

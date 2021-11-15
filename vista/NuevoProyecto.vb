@@ -1,39 +1,13 @@
 ﻿Public Class NuevoProyecto
 
+    Dim idProyecto As Integer
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles text_departamento.TextChanged
+    Public Sub New(idProyecto As Integer)
 
-    End Sub
-
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles text_municipio.TextChanged
-
-    End Sub
-
-    Private Sub text_poblacionInicial_TextChanged(sender As Object, e As EventArgs) Handles text_poblacionInicial.TextChanged
-
-    End Sub
-
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
-
-    End Sub
-
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
-
-    End Sub
-
-    Private Sub TextBox2_TextChanged_1(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
-
-    End Sub
-
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles text_dotacion.TextChanged
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged_1(sender As Object, e As EventArgs) Handles text_elevacionPuente.TextChanged
+        ' Esta llamada es exigida por el diseñador.
+        InitializeComponent()
+        Me.idProyecto = idProyecto
+        ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
 
     End Sub
 
@@ -86,15 +60,15 @@
         proyecto.Departamento1 = text_departamento.Text
         proyecto.Municipio1 = text_municipio.Text
         proyecto.Comunidad1 = text_comunidad.Text
-        proyecto.PoblacionInicial1 = Decimal.Parse(text_poblacionInicial.Text)
-        proyecto.TasaCrecimiento1 = Decimal.Parse(text_tasaCrecimiento.Text) / 100
+        proyecto.PoblacionInicial1 = Double.Parse(text_poblacionInicial.Text)
+        proyecto.TasaCrecimiento1 = If(Double.Parse(text_tasaCrecimiento.Value) / 100 = 0, 2.5, Double.Parse(text_tasaCrecimiento.Value))
         proyecto.TipoFuente1 = combox_tipoFuente.SelectedItem.ToString
-        proyecto.Dotacion1 = Decimal.Parse(text_dotacion.Text)
-        proyecto.ElevacionPuente1 = Decimal.Parse(text_elevacionPuente.Text)
-        proyecto.ElevacionTanque1 = Decimal.Parse(text_elevacionTanque.Text)
+        proyecto.Dotacion1 = Double.Parse(text_dotacion.Text)
+        proyecto.ElevacionPuente1 = Double.Parse(text_elevacionPuente.Text)
+        proyecto.ElevacionTanque1 = Double.Parse(text_elevacionTanque.Text)
         CProyecto.guardarProyecto(proyecto)
 
-        tabla_proyecto.DataSource = CProyecto.listarProyectos()
+        tabla_proyecto.DataSource = CProyecto.listarProyectos(idProyecto)
         limpiarCampos()
     End Sub
 
@@ -102,24 +76,13 @@
         limpiarCampos()
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub text_pais_TextChanged(sender As Object, e As EventArgs) Handles text_pais.TextChanged
-
-    End Sub
-
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles combox_tipoFuente.SelectedIndexChanged
-
-    End Sub
-
     Private Sub NuevoProyecto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        tabla_proyecto.DataSource = CProyecto.listarProyectos()
+        tabla_proyecto.DataSource = CProyecto.listarProyectos(idProyecto)
+        text_tasaCrecimiento.Value = 2.5
         activarcampos(True)
+    End Sub
+
+    Private Sub text_tasaCrecimiento_ValueChanged(sender As Object, e As EventArgs) Handles text_tasaCrecimiento.ValueChanged
+
     End Sub
 End Class
